@@ -1,0 +1,124 @@
+.phantren{
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    /* Nằm ngoài khoảng cách 800 ẩn ik do ta đang xài ở class cô gái bottom -800 nên cần thêm thuộc tính này*/
+}
+
+.anhnen {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background: url(../image/phonglab.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    opacity: 0;
+    animation: hienra 0.4s forwards;
+}
+
+@keyframes hienra{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+img.cogai{
+    height: 550px;
+    bottom: 0px;
+    right: 15%;
+    z-index: 2;
+    position: absolute;
+    transition: 0.4s;
+    bottom: -800px;
+    animation: dituduoilen 0.6s forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes dituduoilen{
+    0%{
+        opacity: 0;
+        bottom: -800px;
+    }
+    100%{
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+
+.chuto{
+    z-index: 3;
+    position: absolute;
+    top: 33%;
+    left: 31%;
+    font-size:33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    opacity: 0;
+    transition: 0.4s;
+    animation: divao 0.8s forwards;
+    animation-delay: 0.4s;
+}
+
+.chunho{
+    z-index: 3;
+    position: absolute;
+    top: 46%;
+    left: 28%;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    width: 400px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+    animation: divao 1s forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes divao{
+    0%{
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        /* 0px ở đây là vị trí ban đầu của nó */
+    }
+}
+
+.nut{
+    z-index: 4;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    background: teal;
+    border:none;
+    border-radius: 50px;
+    color: white;
+    padding: 12px 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s;
+}
+
+.menu{
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    left: 10%;
+    width: 1000px;
+    height: 50px;
+    background-color: lightgoldenrodyellow;
+    opacity: 0;
+    animation: hienra 0.5s forwards;
+    animation-delay: 0.4s;
+}

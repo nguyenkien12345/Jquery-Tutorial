@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1.tieude{
+    text-align: center;
+    font-family: sans-serif,'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 20px 0px;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.anhnho{
+    float: left;
+    height: 200px;
+    margin-right: 10x;
+}
+
+.anh{
+    overflow: hidden;
+    /* Tránh những phần tử dưới tràn lên trên */
+}
+
+.khoi{
+    border-bottom: 1px solid grey;
+    padding-bottom: 42px;
+    margin-bottom: 40px;
+}
+
+h2.tieudekhoi{
+    height: 35px;
+    font-size: 30px;
+    font-weight: 200px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tieudekhoi img{
+    float: right;
+    transition:0.4s;
+    margin-right: -100px;
+    /* Ảnh sẽ biến mất */
+    cursor: pointer;
+}
+
+h2.tieudekhoi:hover img{
+    /* Di chuột lên div khối thì tác động vào ảnh */
+    margin-right: 0px;
+}
+
+h2.tieudekhoi:hover{
+    /* Di chuột lên div khối thì tác động vào ảnh */
+    color:lightgreen;
+}
+
+.noidungkhoi{
+    color: grey;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.tieudekhoi.vang{
+    color:yellow;
+}
+
+.tieudekhoi.vang img{
+    margin-right: 0;
+    transform: rotate(180deg);
+    /* Khi click ảnh thêm vào quay 180deg */
+}

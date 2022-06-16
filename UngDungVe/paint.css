@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+fieldset{
+    width: 615px;
+}
+
+canvas{
+    border: 1px solid #000;
+}
+
+h1{
+    color: #0000ff;
+}
+
+button{
+    margin-left: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JQuery</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<input type="text" name="" id="myInput" placeholder="Search Name:">
+	<table class="myTable">
+		<tr class="header">
+			<th style="width:50%;">Name</th>
+			<th style="width:25%;">Gender</th>
+			<th style="width:25%;">Age</th>
+		</tr>
+		<tbody id="myTable">
+			<tr class="trKey">
+				<td>Nguyễn Trung Kiên</td>
+				<td>Boy</td>
+				<td>20</td>
+			</tr>
+			<tr class="trKey">
+				<td>Vương Huỳnh Quế Trân</td>
+				<td>Girl</td>
+				<td>20</td>
+			</tr>
+			<tr class="trKey">
+				<td>Đinh Thị Vân Anh</td>
+				<td>Girl</td>
+				<td>20</td>
+			</tr>
+			<tr class="trKey">
+				<td>Nguyễn Hồng Quân</td>
+				<td>Boy</td>
+				<td>20</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<button onclick="hello()">HELLO</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function hello() {
+			Swal.fire(
+				'The Internet?',
+				'That thing is still around?',
+				'question'
+			)
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

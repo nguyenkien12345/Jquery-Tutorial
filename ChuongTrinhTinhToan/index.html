@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Chương trình tính toán</legend>
+            <table>
+                <tr>
+                    <td>Số A</td>
+                    <td><input type="text" id="txtSoA"></td>
+                </tr>
+                <tr>
+                    <td>Số B</td>
+                    <td><input type="text" id="txtSoB"></td>
+                </tr>
+                <tr>
+                    <td>Phép tính</td>
+                    <td>
+                        <select name="pheptinh" id="pheptinh">
+                            <option value="1">Cộng</option>
+                            <option value="2">Trừ</option>
+                            <option value="3">Nhân</option>
+                            <option value="4">Chia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kết quả</td>
+                    <td><input type="text" id="txtKetqua"></td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="button" id="btnThucHien" value="Thực Hiện" onclick="TinhToan();"/>
+                        <span id="error" style="color:red;"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

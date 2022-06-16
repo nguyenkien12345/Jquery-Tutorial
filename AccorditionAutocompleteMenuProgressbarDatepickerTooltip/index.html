@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>JQuery</title>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css'
+		integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' 
+		crossorigin='anonymous'/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" 
+		integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+	h1{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	label {
+		display: inline-block;
+		width: 5em;
+	}
+	li{
+		list-style: none;
+	}
+	.ui-state-disabled{ 
+		width: 150px; 
+	}
+</style>
+
+<body>
+
+	<!-- Accordition -->
+	<h1>Accordition</h1>
+	<div class='accordition'>
+		<div class='group'>
+			<h3>TAB 1</h3>
+			<div>
+				<p>
+					Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				</p>
+			</div>
+		</div>
+		<div class='group'>
+			<h3>TAB 2</h3>
+			<div>
+				<p>
+					Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+					suscipit faucibus urna.
+				</p>
+			</div>
+		</div>
+		<div class='group'>
+			<h3>TAB 3</h3>
+			<div>
+				<p>
+					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<!-- Autocomplete -->
+	<h1>Autocomplete</h1>
+	<div class='container'>
+		<div class='row mt-5 text-center'>
+			<div class='col-12'>
+				<input type='text' id='autocomplete'>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<!-- Tooltip -->
+	<h1>Tooltip</h1>
+	<div class='container'>
+		<div class='row mt-5 text-center'>
+			<div class='col-12'>
+				<button title='Đinh Thị Vân Anh'>Nguyễn Trung Kiên</button>
+			</div>
+		</div>
+		<div class='row mt-5 text-center'>
+			<div class='col-12'>
+				<p>
+					<a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover the element 
+					with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
+				</p>
+				<p>
+					But as it&apos;s not a native tooltip, it can be styled. Any themes built with <a href="http://jqueryui.com/themeroller/" 
+				    title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a> will also style tooltips accordingly.
+				</p>
+				<p>
+					<label for="age">Your age: </label>
+					<input id="age" title="We ask for your age only for statistical purposes."/>
+				</p>
+				<p>There are various ways to customize the animation of a tooltip.</p>
+				<p>You can use the <a id="show-option" href="http://jqueryui.com/demos/tooltip/#option-show" title="slide down on show">show</a> and <a id="hide-option" href="http://jqueryui.com/demos/tooltip/#option-hide" title="explode on hide">hide</a> options.</p>
+				<p>You can also use the <a id="open-event" href="http://jqueryui.com/demos/tooltip/#event-open" title="move down on show">open event</a>.</p>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<!-- Datapicker -->
+	<h1>Datapicker</h1>
+	<div class='container'>
+		<div class='row mt-5 text-center'>
+			<div class='col-12'>
+				<input type='text' id='datapicker'>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<!-- Menu -->
+	<h1>Menu</h1>
+	<ul id='menu'>
+		<li class='ui-state-disabled'>
+			<div>Toys (n/a)</div>
+		</li>
+		<li>
+			<div>Books</div>
+		</li>
+		<li>
+			<div>Clothing</div>
+		</li>
+		<li>
+			<div>Electronics</div>
+			<ul>
+				<li class='ui-state-disabled'>
+					<div>Home Entertainment</div>
+				</li>
+				<li>
+					<div>Car Hifi</div>
+				</li>
+				<li>
+					<div>Utilities</div>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<div>Movies</div>
+		</li>
+		<li>
+			<div>Music</div>
+			<ul>
+				<li>
+					<div>Rock</div>
+					<ul>
+						<li>
+							<div>Alternative</div>
+						</li>
+						<li>
+							<div>Classic</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div>Jazz</div>
+					<ul>
+						<li>
+							<div>Freejazz</div>
+						</li>
+						<li>
+							<div>Big Band</div>
+						</li>
+						<li>
+							<div>Modern</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div>Pop</div>
+				</li>
+			</ul>
+		</li>
+		<li class='ui-state-disabled'>
+			<div>Specials (n/a)</div>
+		</li>
+	</ul>
+	<hr/>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+		integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+		crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" 
+		integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>

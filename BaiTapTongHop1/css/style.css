@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tinto {
+    margin: 0px auto;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 20px;
+}
+
+img.layer1 {
+    width: 300px;
+}
+
+.xam {
+    width: 400px;
+    height: 500px;
+    background: rgba(0,0,0,0.32);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gradient {
+    width: 400px;
+    height: 500px;
+    background-image: -webkit-linear-gradient(45deg, #5DCD6A 0%,#D38253 40%, #4B4A4A 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.hinhvuong{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 1px solid white;
+    z-index: 3;
+    opacity: 0;
+    transition: 0.2s;
+    transform: scale(0);
+}
+
+.chuto{
+    font-size: 31px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 40%;
+    left: 0%;
+    z-index: 4;
+    position: absolute;
+    color:white;
+    text-align: center;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.chunho{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    top: 50%;
+    left: 15%;
+    z-index: 5;
+    position: absolute;
+    color:white;
+    text-align: center;
+    width: 70%;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: 0.2s;
+    transform: scale(0);
+}
+
+.tinto:hover .chuto{
+    /* top: 34%; */
+    transform: translateY(-30px);
+}
+
+.tinto:hover .chunho{
+    /* top: 34%; */
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tinto:hover .hinhvuong{
+    /* top: 34%; */
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tinto:hover .xam{
+    opacity: 0;
+}
+
+.tinto:hover .gradient{
+    opacity: 0.4;
+}
+
+
+
+/*  position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+Đây là 4 thuộc tính xác định 1 layer. Bắt buộc phải luôn có*/

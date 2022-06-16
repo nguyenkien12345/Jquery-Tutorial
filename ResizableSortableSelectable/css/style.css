@@ -1,0 +1,16 @@
+/*.MyClass{
+	float: left;
+	text-align: center;
+}
+ul li{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	display: block;
+	list-style: none;
+	margin:10px 0px;
+	padding: 10px 12px;
+}
+
+.ui-selected{background-color: red}
+.ui-selecting{background-color: orange}*/

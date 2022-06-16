@@ -1,0 +1,61 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+}
+
+.picture{
+	width: 800px;
+	height: 800px;
+	position: relative;
+	margin: 0px auto;
+}
+
+.picture img{
+	width: 800px;
+	height: 800px;
+	border: 2px solid yellow;
+	border-radius: 10px; 
+}
+
+.picture ul{
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	left: 320px;
+	bottom: 80px;
+}
+
+.picture ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 6px;
+	font-weight: bold;
+	background-color: orange;
+	border-radius: 10px;
+}
+
+.picture .active{
+	color: yellow;
+	background-color: red;
+	/*Vì picture đang có thuộc tính là relative nên phải có .picture mới thêm thuộc tính vào lớp active được*/
+}
+
+#next{
+	top:400px;
+	position: absolute;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	right: 30px;
+	text-decoration: none;
+}
+
+#prev{
+	top:400px;
+	position: absolute;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	left: 30px;
+	text-decoration: none;
+}

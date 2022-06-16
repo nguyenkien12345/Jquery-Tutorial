@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paint.css">
+</head>
+<body>
+    <h1>SIMPLE PAINT</h1>
+    <!-- fieldset: Giống như là groupbox vậy -->
+    <fieldset>
+        <legend> Select a pen and color </legend>
+        <input type="color" id="color">
+
+        <input type="radio" name="penwidth" id="thin" value="thin" checked class="pen">
+        <label for="thin">Thin</label>
+
+        <input type="radio" name="penwidth" id="medium" value="medium" class="pen">
+        <label for="medium">Medium</label>
+
+        <input type="radio" name="penwidth" id="thick" value="thick" class="pen">
+        <label for="thick">Thick</label>
+
+        <button type="button" id="btnDel">Xóa</button>
+    </fieldset>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="paint.js"></script>
+</body>
+</html>

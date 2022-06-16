@@ -1,0 +1,32 @@
+.content{
+	width: 1200px;
+	display: flex;
+	margin-top:50px;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.khoi_1,.khoi_2,.khoi_3,.khoi_4,.khoi_5{
+	width: 100px;
+	height: 100px;
+	padding: 10px 12px;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color: yellow;
+}
+
+.khoi_2{
+	background-color: red;
+}
+
+.khoi_3{
+	background-color: blue;
+}
+
+.khoi_4{
+	background-color: green;
+}
+
+.khoi_5{
+	background-color: black;
+}

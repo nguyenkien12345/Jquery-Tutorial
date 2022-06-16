@@ -1,0 +1,31 @@
+#myInput{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	background-color: #ccc; 
+	padding: 10px 12px;
+	border: 2px dashed yellow;
+	cursor: pointer;
+}
+
+.myTable{
+	margin: 0px auto;
+    border-collapse: collapse; 
+    border: 1px solid green;
+    width:100%;
+    font-size: 20px;
+}
+
+.myTable th, #myTable td{
+	text-align: left;
+	padding: 10px;
+}
+
+.myTable tr{
+	border-bottom: 1px solid red;
+}
+
+.header{
+	background-color: lightblue;
+}

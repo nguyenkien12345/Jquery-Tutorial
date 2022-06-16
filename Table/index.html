@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style>
+	.bg-gray td{
+		background-color:greenyellow;
+	}
+
+	tr.hashover td{
+		background-color: teal;
+	}
+
+	tr.active td{
+		background-color: red !important;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Xóa bản ghi với table</h1>
+				<div class="wrap-head">
+					<div class="wrap-head-content">
+						<table>
+							<tr>
+								<td colspan="7">
+									Danh Sách Sản Phẩm
+								</td>
+							</tr>
+							<tr>
+								<td class="stt">STT</td>
+								<td class="product-code">Product Code</td>
+								<td class="product-name">Product Name</td>
+								<td class="quantity">Quantity</td>
+								<td class="price">Price</td>
+								<td class="total">Total</td>
+								<td class="action">Delete</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="wrap-scroll">
+					<table class="product"> 
+						<tr class="bg-gray">
+							<td class="stt">1</td>
+							<td class="product-code">101</td>
+							<td class="product-name">Sản phẩm 1</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="1">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="1">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">2</td>
+							<td class="product-code">102</td>
+							<td class="product-name">Sản phẩm 2</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="2">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="2">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">3</td>
+							<td class="product-code">103</td>
+							<td class="product-name">Sản phẩm 3</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="3">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="3">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">4</td>
+							<td class="product-code">104</td>
+							<td class="product-name">Sản phẩm 4</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="4">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="4">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">5</td>
+							<td class="product-code">105</td>
+							<td class="product-name">Sản phẩm 5</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="5">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="5">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">6</td>
+							<td class="product-code">106</td>
+							<td class="product-name">Sản phẩm 6</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="6">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="6">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">7</td>
+							<td class="product-code">107</td>
+							<td class="product-name">Sản phẩm 7</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="7">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="7">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">8</td>
+							<td class="product-code">108</td>
+							<td class="product-name">Sản phẩm 8</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="8">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="8">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">9</td>
+							<td class="product-code">109</td>
+							<td class="product-name">Sản phẩm 9</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="9">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="9">
+							</td>
+						</tr>
+						<tr class="bg-gray">
+							<td class="stt">10</td>
+							<td class="product-code">110</td>
+							<td class="product-name">Sản phẩm 10</td>
+							<td class="quantity">100</td>
+							<td class="price">90$</td>
+							<td class="total">1900$</td>
+							<td class="action">
+								<button type="button">
+									DELETE
+								</button>
+							</td>
+							<td class="action1">
+								<input type="radio" class="bt-radio" name="selectrow" value="10">
+							</td>
+							<td class="action2">
+								<input type="checkbox" class="bt-checkbox" name="selectbox" value="10">
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
