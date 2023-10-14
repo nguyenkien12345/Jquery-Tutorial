@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap Unwrap In Html Css</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+
+    .title {
+        color: red;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .box {
+        width: 500px;
+        height: 180px;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgb(200, 200, 89);
+    }
+
+    .buttons {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100px;
+        padding: 12px 24px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: #ddd;
+    }
+
+    .wrapper {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        background: rgb(33, 151, 187);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="title">Jquery Wrap() & Jquery Unwrap()</h1>
+
+        <div class="box">
+            <h2>Test Box</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto deleniti fugiat dicta ratione velit excepturi 
+                nesciunt commodi voluptatum est beatae porro minus et dolor, quos, magni ducimus molestiae cumque.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button id="btnWrap">Wrap</button>
+            <button id="btnUnWrap">UnWrap</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            const element = $('.box p');
+
+            // Hàm wrap() được sử dụng để bọc một hoặc nhiều phần tử trong một phần tử bọc (wrapper element).
+            // $(selector).wrap(wrapperElement);
+            // $("p").wrap("<div class='wrapper'></div>");
+            $('#btnWrap').on('click', function(e){
+                // Chúng ta sẽ bọc thẻ p vào 1 lớp div có class là wrapper
+                if(!(element.parent().hasClass('wrapper'))){
+                    element.wrap('<div class="wrapper"></div>');
+                }
+            });
+
+
+            // Hàm unwrap() được sử dụng để loại bỏ phần tử bọc (wrapper element) khỏi các phần tử đã bọc. 
+            // $(selector).unwrap();
+            // $("p").unwrap();
+            $('#btnUnWrap').on('click', function(e){
+                // Chúng ta sẽ gỡ bọc thẻ p khỏi bất kỳ phần tử nào đang bọc nó
+                if(element.parent().hasClass('wrapper')){
+                    element.unwrap();
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
