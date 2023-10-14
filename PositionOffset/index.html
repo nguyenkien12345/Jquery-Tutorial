@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Offset In Html Css</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+
+    .title {
+        color: red;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .box {
+        width: 500px;
+        height: 180px;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgb(200, 200, 89);
+        /* position: relative; */
+    }
+
+    .buttons {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 100px;
+        padding: 12px 24px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: #ddd;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="title">Jquery Position() & Jquery Offset()</h1>
+
+        <div class="box">
+            <h2>Test Box</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto deleniti fugiat dicta ratione velit excepturi 
+                nesciunt commodi voluptatum est beatae porro minus et dolor, quos, magni ducimus molestiae cumque.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button id="btnPosition">Position</button>
+            <button id="btnOffset">Offset</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnPosition').on('click', function(e){
+                const positionX = $('.box h2').position().left;
+                const positionY = $('.box h2').position().top;
+                console.log('position x: ', positionX);
+                console.log('position y: ', positionY);
+            });
+
+            $('#btnOffset').on('click', function(e){
+                const offsetX = $('.box h2').offset().left;
+                const offsetY = $('.box h2').offset().top;
+                console.log('offset x: ', offsetX);
+                console.log('offset y: ', offsetY);
+
+                // Có hỗ trợ thiết lập lại vị trí của phần tử. 
+                // $('.box').offset({top: 0, left: 0});
+            });
+        })
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Lý thuyết:
+    Điểm giống và khác giữa position() & offset()
+
+    Điểm giống nhau: 
+    - Cả hai phương thức này đều có thể dùng để lấy vị trí của phần tử được chọn so với vị trí của phần tử gốc trong trang web.
+
+    Điểm khác nhau: 
+    + Position: 
+    - Relative to its Parent Element (Lấy vị trí so với phần tử cha)
+    - Vị trí của phần tử không bị thay đổi bởi phần margin (Tức là không lấy phần margin)
+    - Không hỗ trợ thiết lập lại vị trí của phần tử.
+
+    + Offset:
+    - Relative to Document (Lấy vị trí so với document)
+    - Vị trí của phần tử bị thay đổi bởi phần margin (Tức là lấy cả phần margin)
+    - Có hỗ trợ thiết lập lại vị trí của phần tử.
+ -->
